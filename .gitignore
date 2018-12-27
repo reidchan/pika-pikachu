@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+.vscode/
+**/node_modules
+**/api-docs/public/json
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
