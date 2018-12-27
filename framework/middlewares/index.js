@@ -1,0 +1,6 @@
+const cors = require('kcors')
+const logger = require('koa-logger')
+const compose = require('koa-compose')
+const exceptions = require('./exceptions')
+const headers = require('./jwt-header')
+module.exports = (exceptionHandlers) => compose([exceptions(exceptionHandlers), cors(), logger(), headers()])
